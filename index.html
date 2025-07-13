@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Lucky's Chat</title>
-        <link rel="icon" href="media/icon.png">
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
-        <div class="main-container">
-            <h1 class="title">Lucky's Chat</h1>
-            <p class="subtitle">Enter your name to join the chat</p>
-            <input type="text" class="username-input" placeholder="Your name...">
-            <div class="button-container">
-                <button class="chat-button" id="enter-chat loader">Enter Chat</button>
-                <button class="rules-button" id="rules-button loader">Rules</button>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucky's Chat</title>
+    <link rel="icon" href="media/icon.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="title">Lucky's Chat</h1>
+        <p class="subtitle">Enter your name to join the chat</p>
+
+        <input type="text" class="username-input" placeholder="Your name...">
+
+        <div class="button-container">
+            <!-- ✅ Fixed: Single valid ID and separate class -->
+            <button class="chat-button loader" id="enter-chat">Enter Chat</button>
+            <button class="rules-button loader" id="rules-button">Rules</button>
         </div>
+    </div>
 
-
-
-    </body>
-
-
-
+    <!-- ✅ Script should be last so DOM is loaded before running -->
     <script src="scripts/user.js"></script>
-    <script src="scripts/loader.js"></script>
+</body>
 </html>

@@ -2,6 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const input = document.querySelector(".username-input");
     const enterBtn = document.getElementById("enter-chat");
 
+    if (!input || !enterBtn) {
+        console.warn("Input or Enter button not found");
+        return;
+    }
+
     const storedName = localStorage.getItem("username");
     const nameLocked = localStorage.getItem("nameLocked") === "true";
 
