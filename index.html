@@ -3,25 +3,25 @@
     <head>
         <title>Lucky's Chat</title>
         <link rel="icon" href="media/icon.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <div class="chat-app">
-            <div class="chat-container">
-                <div class="message">
-                    <span class="username">Du_one</span> <span class="timestamp">05/06/2025 17</span><br>
-                    <span class="text">sup ya little bastard jk</span>
-                </div>
-
-                <div class="message">
-                    <span class="username">EvanRunner</span> <span class="timestamp">05/06/2025 17</span><br>
-                    <span class="text">u nigger</span>
-                </div>
-
-            </div>
-            <div class="chat-footer">
-                <input class="messagesend" placeholder="Message #global-chat">
+        <div class="main-container">
+            <h1 class="title">Lucky's Chat</h1>
+            <p class="subtitle">Enter your name to join the chat</p>
+            <input type="text" class="username-input" placeholder="Your name...">
+            <div class="button-container">
+                <button class="chat-button" id="enter-chat loader">Enter Chat</button>
+                <button class="rules-button" id="rules-button loader">Rules</button>
             </div>
         </div>
+
+
+
     </body>
+
+
+
+    <script src="scripts/user.js"></script>
+    <script src="scripts/loader.js"></script>
 </html>
